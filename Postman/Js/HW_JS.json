@@ -1,0 +1,270 @@
+// 1. Создать переменную “item_1”
+// 2. Присвоить переменной item_1 цифру 5
+
+        let item_1 = 5
+
+// Вывести в консоль item_1.
+
+        console.log(item_1)
+
+// Создать переменную “item_2”
+// Присвоить переменной item_2 цифру 3
+
+        let item_2 = 3
+
+// Вывести в консоль item_2
+
+        console.log(item_2)
+
+// Создать переменную “item_3”
+// Присвоить переменной item_3 сложение item_1 и item_2
+
+        let item_3 = item_1 + item_2
+
+// Вывести в консоль item_3
+
+        console.log(item_3)
+
+// Создать переменную “item_4”
+// Присвоить переменной item_4 строку “Yolochka”
+
+        let item_4 = "Yolochka"
+
+// Вывести в консоль item_4
+
+        console.log(item_4)
+
+// Вывести в консоль сложение item_3 и item_4
+
+        console.log(item_3 + item_4)
+
+// Вывести в консоль умножение item_3 и item_4
+
+        console.log(item_3 * item_4)
+
+// Создать переменную “item_5”
+// Присвоить переменной item_5 переменную item_3
+
+        let item_5 = item_3
+
+// Создать переменную item_6
+
+        let item_6
+
+// Создать переменную item_6_type
+
+        let item_6_type
+
+// Присвоить переменной item_6 значение 15
+
+        item_6 = 15
+
+// Присвоить переменной item_6_type тип переменной item_6
+
+        item_6_type = typeof item_6
+
+// Вывести в консоль тип данных item_6 в виде ——  “item_6 == ”  item_6,  “item_6_type == ”  item_6_type ——
+
+        console.log("item_6 == " + item_6 + ", item_6_type == " + item_6_type)
+
+//  Создать переменную item_7 и в ней преобразовать item_6 в String
+
+        let item_7 = String(item_6)
+
+// Создать переменную item_7_type
+// Присвоить переменной item_7_type тип переменной item_7
+
+        let item_7_type = typeof item_7
+
+// Вывести в консоль тип данных item_7 в виде ——  “item_7 == ”  item_7,  “item_7_type == ”  item_7_type ——
+
+        console.log("item_7 == " + item_7 + ", item_7_type == " + item_7_type)
+
+// Создать переменную “age_1” и присвоить ей значение 10
+
+        let age_1 = 10
+
+// Создать переменную “age_2” и присвоить ей значение 18
+
+        let age_2 = 18
+
+// Создать переменную “age_3” и присвоить ей значение 60
+
+        let age_3 = 60
+
+// Если age_1 < age_2, вывести в консоль “You don’t have access cause your age is ” + age_1 + “ It’s less then ”
+// Если age_1 >=  age_2 и age_1 <  age_3, вывести в консоль “Welcome 
+// Если age_1  > age_3, вывести в консоль “Keep calm and look Culture channel”.
+// Иначе выводите “Technical work”.!”
+
+        if(age_1 < age_2){
+            console.log("You don not have access cause your age is " + age_1 + " It is less then ")
+        } else if(age_1 >= age_2 && age_1 < age_3){
+            console.log("Welcome  !")
+        } else if(age_1  > age_3){
+            console.log("Keep calm and look Culture channel")
+        } else console.log("Technical work")
+
+
+// HW_1* 
+// Задания с разным количеством звездочек:)
+// 1*:
+// Преобразовать написанный код в 26-33 пунктах в функцию, принимающую на вход возраст.
+// Пример: const checkAge = function(age) {
+// Ваши преобразования
+// }
+// Вывести в консоль результат работы функции с возрастами 17, 18, 61
+        
+        function f1(age_1, age_2, age_3){
+            if (age_1 < age_2){
+                return "You don not have access cause your age is " + age_1 + " It is less then "
+            } else if(age_1 >= age_2 && age_1 < age_3){
+            return "Welcome  !"
+            } else if(age_1  > age_3){
+            return "Keep calm and look Culture channel"
+            } else return "Technical work"
+        }
+        
+        console.log(f1(17, 18, 61))
+
+
+
+// 2*:
+// Преобразовать задание 1* таким образом, чтобы первым делом в функции проверялся тип данных. И если он не Number - кидалась ошибка.
+
+        function f1(age_1, age_2, age_3){
+            if (typeof age_1 !== 'number' || typeof age_2 !== 'number' || typeof age_3 !== 'number'){
+                return "ERROR";
+            } else if (age_1 < age_2){
+                return "You don not have access cause your age is " + age_1 + ". It is less than " + age_2 + ".";
+            } else if (age_1 >= age_2 && age_1 < age_3){
+                return "Welcome!";
+            } else if (age_1 > age_3){
+                return "Keep calm and look Culture channel";
+            } else {
+                return "Technical work";
+            }
+        }
+
+        console.log(f1(17, 18, 61));
+
+
+// 3**:
+// Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number
+// Можно обновить функцию f1 так, чтобы она преобразовывала строки, содержащие только числовые значения, в числа перед проверкой их типа. 
+// Используйте функцию isNaN для проверки, является ли строка числовой.       
+
+
+        function f1(age_1, age_2, age_3){
+            age_1 = Number(age_1);
+            age_2 = Number(age_2);
+            age_3 = Number(age_3);
+
+            if (age_1 !== age_1 || age_2 !== age_2 || age_3 !== age_3){
+                return "ERROR";
+            } else if (age_1 < age_2){
+                return "You don not have access cause your age is " + age_1 + ". It is less than " + age_2 + ".";
+            } else if (age_1 >= age_2 && age_1 < age_3){
+                return "Welcome!";
+            } else if (age_1 > age_3){
+                return "Keep calm and look Culture channel";
+            } else {
+                return "Technical work";
+            }
+        }
+
+        console.log(f1('17', '18', '61'));  // Выведет: "You don not have access cause your age is 17. It is less than 18."
+
+
+
+// 4***:
+// Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
+
+
+        function f1(){
+            let age_1 = isNaN(Number(prompt("Enter age 1"))) ? "ERROR" : Number(prompt("Enter age 1"));
+            let age_2 = isNaN(Number(prompt("Enter age 2"))) ? "ERROR" : Number(prompt("Enter age 2"));
+            let age_3 = isNaN(Number(prompt("Enter age 3"))) ? "ERROR" : Number(prompt("Enter age 3"));
+
+            if (age_1 === "ERROR" || age_2 === "ERROR" || age_3 === "ERROR"){
+                return "ERROR";
+            } else if (age_1 < age_2){
+                return "You do not have access because your age is " + age_1 + ". It is less than " + age_2 + ".";
+            } else if (age_1 >= age_2 && age_1 < age_3){
+                return "Welcome!";
+            } else if (age_1 > age_3){
+                return "Keep calm and look Culture channel";
+            } else {
+                return "Technical work";
+            }
+        }
+
+        console.log(f1());
+
+
+// JS. HW_2
+
+// Напишите валидационный скрипт используя функции 
+        
+// 1. Скрипт должен на вход принимать строку.
+// 2. После проверки строки выводить в консоль сообщение где будет конкретно написано, что не так в ведённой строке.
+// 3. Минимум 5 символов в строке
+// 4. Максимум 64 символа в строке        
+// 5. В строке должны быть буквы
+// 6. Должна быть хотя бы одна буква в верхнем регистре
+// 7. Должна быть хотя бы одна цифра
+// 8. Должна быть хотя бы одна @
+// 9. Строка не должна быть пустой
+        
+        function validateString(str) {
+            // Строка не должна быть пустой
+            if (!str) {
+                console.log("Строка не должна быть пустой");
+                return;
+            }
+
+            // Минимум 5 символов в строке
+            if (str.length < 5) {
+                console.log("Минимум 5 символов в строке");
+                return;
+            }
+
+            // Максимум 64 символа в строке
+            if (str.length > 64) {
+                console.log("Максимум 64 символа в строке");
+                return;
+            }
+
+            // В строке должны быть буквы
+            if (!/[a-zA-Z]/.test(str)) {
+                console.log("В строке должны быть буквы");
+                return;
+            }
+
+            // Должна быть хотя бы одна буква в верхнем регистре
+            if (!/[A-Z]/.test(str)) {
+                console.log("Должна быть хотя бы одна буква в верхнем регистре");
+                return;
+            }
+
+            // Должна быть хотя бы одна цифра
+            if (!/[0-9]/.test(str)) {
+                console.log("Должна быть хотя бы одна цифра");
+                return;
+            }
+
+            // Должна быть хотя бы одна @
+            if (!/@/.test(str)) {
+                console.log("Должна быть хотя бы одна '@'");
+                return;
+            }
+        }
+
+
+
+
+
+
+
+
+
