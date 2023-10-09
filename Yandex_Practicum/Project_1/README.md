@@ -3,7 +3,8 @@
 
 [Диаграмма связей]([https://drive.google.com/file/d/1DPMVKMbUQQF_pnWug_LNYBX1RXpE1CqA/view?usp=sharing])
 
-[![N|Solid](https://dashboard.snapcraft.io/site_media/appmedia/2019/08/android-chrome-512x512.png)](https://drive.google.com/file/d/1DPMVKMbUQQF_pnWug_LNYBX1RXpE1CqA/view?usp=sharing)
+<img src="https://dashboard.snapcraft.io/site_media/appmedia/2019/08/android-chrome-512x512.png" alt="N|Solid" width="200" height="200">
+(https://drive.google.com/file/d/1DPMVKMbUQQF_pnWug_LNYBX1RXpE1CqA/view?usp=sharing)
 
 
 [Блок-схема]([https://drive.google.com/file/d/1WQq_-c4RKXViugxa5XVXhm8eIC1YxBZ3/view?usp=sharing])
