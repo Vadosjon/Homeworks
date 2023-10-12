@@ -1,4 +1,4 @@
-### _В рамках данного проекта были изучены требования к Яндекс Маршрутам, на основе требований построена [диаграмма связей](https://drive.google.com/file/d/1DPMVKMbUQQF_pnWug_LNYBX1RXpE1CqA/view?usp=sharing) и [блок-схема](https://drive.google.com/file/d/1WQq_-c4RKXViugxa5XVXhm8eIC1YxBZ3/view?usp=sharing), иллюстрирующая как скорость собственного автомобиля зависит от времени суток. Далее выделены классы эквивалентности, определены границы, подобраны тестовые значения_
+### _В рамках данного проекта были изучены требования к Яндекс Маршрутам, на основе требований построена [диаграмма связей](https://drive.google.com/file/d/1DPMVKMbUQQF_pnWug_LNYBX1RXpE1CqA/view?usp=sharing), [блок-схема](https://drive.google.com/file/d/1WQq_-c4RKXViugxa5XVXhm8eIC1YxBZ3/view?usp=sharing), иллюстрирующая, как скорость собственного автомобиля зависит от времени суток. Далее выделены классы эквивалентности, определены границы, подобраны тестовые значения_
 
 [Диаграмма связей](https://drive.google.com/file/d/1DPMVKMbUQQF_pnWug_LNYBX1RXpE1CqA/view?usp=sharing)
 
